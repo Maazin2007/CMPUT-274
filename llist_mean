@@ -1,0 +1,24 @@
+from cmput274 import *
+
+myLl = cons(1, cons(2, cons(3, cons(4, empty()))))
+
+# problem one
+def llist_mean(list): 
+    """
+    mean - produces the mean of the numbers in lon
+    
+    list    - a list of numbers
+    returns - a float
+    
+    Examples:
+        mean(cons(1, cons(2, cons(3, cons(4, empty()))))) -> 5.0
+    """
+    return 0 if isEmpty(list) else (first(list) / 2) + llist_mean(rest(list))
+
+print(llist_mean(myLl))
+
+
+
+
+
+

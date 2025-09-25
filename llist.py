@@ -11,4 +11,4 @@ myList = create_List(10)
 def extract_list_item(list, i): return first(list) if i == 0 else extract_list_item(rest(list), i - 1)
 
 print(myList)
-print(extract_list_item(myList, 100))
+print(extract_list_item(myList, 2))
